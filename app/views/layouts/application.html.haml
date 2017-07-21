@@ -13,13 +13,13 @@
 
       %nav
         - if user_signed_in?
-          = link_to "Create Doc", new_doc_path
-          = link_to "Sign Out", destroy_user_session_path, method: :delete
+          = link_to "Create Doc", new_doc_path, class: "button"
+          = link_to "Sign Out", destroy_user_session_path, method: :delete, class: "button"
 
         - else
-          = link_to "log in", new_user_session_path
-
+          = link_to "log in", new_user_session_path, class: "button"
+  
   %p.notice= notice
   %p.alert= alert
-
   = yield
+
