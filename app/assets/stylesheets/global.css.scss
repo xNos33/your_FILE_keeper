@@ -69,23 +69,26 @@ a {
 // HEADER STYLING
 
 header {
-	background: #529ECC;
+	background: #00b300;
+	background-image: image-url("top.png");
+	background-image-width: 100%;
 	position: absolute;
 	top: 0;
 	width: 100%;
-	padding: 1.75rem 0;
+	padding: 3.00rem 0;
 	border-bottom: 1.5px solid #376490;
 	.header_inner {
 		width: 90%;
 		margin: 0 auto;
+		/*background-image: image-url("type5.png");*/
 		#logo {
 			display: inline-block;
 			width: 10rem;
 			float: left;
 			font-weight: bold;
-			color: white;
-			font-family: "Brandon Grotesque","Helvetica Neue", Helvetica, sans-serif;
-			font-size: 2.0rem;
+			color: #ffff00;
+			font-family: 'Special Elite', cursive;
+			font-size: 3.0rem;
 		}
 		nav {
 			float: right;

@@ -1,0 +1,40 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+	#page_wrapper {
+		padding: 12em;
+		background-color: #000000;
+		#profile_image {
+			width: 300px;
+			float: left;
+			margin-right: 2em;
+			img {
+				width: 100%;
+				border-radius: 0.35em;
+			}
+		}
+		#content {
+			h1 {
+				color: #4d4dff;
+				font-weight: 500;
+				font-family: 'Special Elite', cursive;
+			}
+			h2 {
+				color: #006400;
+				font-weight: 500;
+				font-family: 'Special Elite', cursive;
+			}
+			p {
+				color: #e60000;
+				font-size: 1.1em;
+				line-height: 1.75;
+				font-family: 'Special Elite', cursive;
+			}
+			a {
+				color: #33acb7;
+				font-weight: 700;
+				font-family: 'Special Elite', cursive;
+				text-decoration: none;
+			}
+		}
+	}

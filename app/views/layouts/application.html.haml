@@ -4,20 +4,24 @@
   %title FileCabinet | Your life's work!
   = csrf_meta_tags
   = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+  = stylesheet_link_tag    'application', "https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text"
+  = stylesheet_link_tag    'application', "https://fonts.googleapis.com/css?family=Special+Elite"
   = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-
+  ="https://fonts.googleapis.com/css?family=Calligraffitti" 
+  
 %body
   %header
     .header_inner
-      = link_to "FileCabinet", root_path, id: "logo"
-
+      = link_to "All_files", root_path, id: "logo"
+      
       %nav
         - if user_signed_in?
-          = link_to "Create Doc", new_doc_path, class: "button"
-          = link_to "Sign Out", destroy_user_session_path, method: :delete, class: "button"
+          = link_to "Create Doc", new_doc_path, class: "btn btn-success"
+          = link_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-success"
 
         - else
-          = link_to "log in", new_user_session_path, class: "button"
+          = link_to "about", about_path, id: "logo"
+          = link_to "log in", new_user_session_path, class: "btn btn-success"
   
   %p.notice= notice
   %p.alert= alert
