@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   resources :docs
   authenticated :user do
+  	#my part
+  	#get :confirm_email
   	root "docs#index", as: "authenticated_root"
   end
 

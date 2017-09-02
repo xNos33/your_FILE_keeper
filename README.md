@@ -31,6 +31,7 @@ Things you may want to cover:
 * rails g model Doc title:string content:text
 * rails g controller Docs
 * rails g migration add_user_id_to_docs user_id:integer
+* rails generate migration add_email_confirm_column_to_users email_confirmed:boolean confirm_token:string*/
 
 /* extra gems:
 * gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
